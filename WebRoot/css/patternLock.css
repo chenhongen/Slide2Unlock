@@ -1,0 +1,91 @@
+/*
+	patternLock.js v 0.1.1
+	Author: Sudhanshu Yadav
+	Copyright (c) 2013 Sudhanshu Yadav - ignitersworld.com , released under the MIT license.
+	Demo on: ignitersworld.com/lab/patternLock.html
+*/
+.patt-holder {
+}
+.patt-wrap {
+	position:relative;
+	cursor:pointer;
+}
+.patt-wrap ul, .patt-wrap li {
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+.patt-circ {
+	position:relative;
+	float: left;
+	background-image:url(../img/night.png);
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-moz-box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
+    -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
+    filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.8;
+}
+.patt-circ.hovered {
+	border:3px solid #009900;
+}
+.patt-error .patt-circ.hovered {
+	border:3px solid #BA1B26;
+}
+.patt-hidden .patt-circ.hovered {
+	border:0;
+}
+.patt-dots {
+	background: #64865F;
+	width: 10px;
+	height: 10px;
+	border-radius:5px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-5px;
+	margin-left:-5px;
+}
+.patt-lines {
+	border-radius:5px;
+	height:10px;
+	background:rgba(255, 255, 255, .7);
+	position:absolute;
+	transform-origin:5px 5px;
+	-ms-transform-origin:5px 5px; /* IE 9 */
+	-webkit-transform-origin:5px 5px;
+}
+.patt-hidden .patt-lines {
+	display:none;
+}
+
+.bg1 {
+	background-position:0 0;
+}
+.bg3 {
+	background-position:84px 0;
+}
+.bg2 {
+	background-position:168px 0;
+}
+.bg4 {
+	background-position:0 170px;
+}
+.bg6 {
+	background-position:84px 170px;
+}
+.bg5 {
+	background-position:168px 170px;
+}
+.bg7 {
+	background-position:0 84px;
+}
+.bg9 {
+	background-position:84px 84px;
+}
+.bg8 {
+	background-position:168px 84px;
+}
